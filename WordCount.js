@@ -1,8 +1,10 @@
 function countWords(sentence){
-    sentence = sentence.split(' ')
+    sentence = sentence.split(' ');
 
+    const nonEmptyElemnets = sentence.filter((element) => element !== "")
+    console.log(nonEmptyElemnets)
     console.log(sentence.length)
 }
 
-countWords("My name is vishal")
-countWords("you are my hunny bunny")
+countWords("My name   is   Alex")
+countWords("you are my younger brother")

@@ -9,7 +9,7 @@ function countCharacters(str) {
   return result;
 }
 
-console.log(countCharacters("Sanskriti"));
+console.log(countCharacters("yourname"));
 
 function countCharacters2(str) {
   if (typeof str !== "string") {
