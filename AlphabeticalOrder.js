@@ -22,3 +22,23 @@ function checkAlphaOrder2(str) {
 
 console.log(checkAlphaOrder2("vishal"));
 console.log(checkAlphaOrder2("abcdef"));
+
+function isAlphabetical(str){
+    str = str.toLowerCase();
+
+    let prev = "";
+
+    for (const char of str) {
+        if(char === " ") continue;
+
+        if(prev && char < prev){
+            return false;
+        }
+
+        prev = char
+    }
+    return true;
+}
+
+console.log("v i s h a l",isAlphabetical("v i s h a l"))
+console.log("a b c d e",isAlphabetical("a b c d e"))
