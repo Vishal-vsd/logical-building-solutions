@@ -28,3 +28,16 @@ console.log(countCharacters2("vishal"))
 
 let array = [30,49,36];
 console.log(...array, array)
+
+
+function charCount(str) {
+  str = str.toLowerCase()
+  let result = {}
+  for (const char of str) {
+    result[char] = (result[char] || 0) + 1
+  }
+
+  return result;
+}
+
+console.log(charCount("Vishal Dhiman"))
