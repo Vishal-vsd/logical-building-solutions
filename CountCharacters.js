@@ -41,3 +41,27 @@ function charCount(str) {
 }
 
 console.log(charCount("Vishal Dhiman"))
+
+
+const myObject = {};
+myObject.a = 1;
+myObject["b"] = 2;
+console.log(myObject)
+
+
+function countCharacters4(str){
+  str = str.toLowerCase();
+  const splittedstr = str.split("");
+  const result = splittedstr.reduce((acc, char)=> {
+    if(!acc[char]){
+      acc[char] = 0;
+    }
+    acc[char] = acc[char] + 1;
+
+    return acc;
+  }, {})
+
+  console.log("Accumulator is", result)
+}
+
+countCharacters4("Sanskriti")
